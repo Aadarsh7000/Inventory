@@ -1,0 +1,8 @@
+com\yash\Inventory\service\ProductService.class
+com\yash\Inventory\model\Product.class
+com\yash\Inventory\InventoryApplication.class
+com\yash\Inventory\controller\ProductController.class
+com\yash\Inventory\exception\ProductNotFoundException.class
+com\yash\Inventory\exception\ApiException.class
+com\yash\Inventory\exception\GlobalExceptionHandler.class
+com\yash\Inventory\repository\ProductRepository.class
