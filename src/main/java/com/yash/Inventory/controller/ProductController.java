@@ -53,7 +53,7 @@ public class ProductController {
             return ResponseEntity.status(HttpStatus.OK).body("Product Deleted Successfully");
     }
     @GetMapping("/user1")
-    public String getUser1(@PathVariable int id) {
+    public String getUser1() {
 		return"{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"John Doe\",\n" +
@@ -63,7 +63,7 @@ public class ProductController {
 
     }
     @GetMapping("/user2")
-    public String getUser2(@PathVariable int id) {
+    public String getUser2() {
 		return"{\n" +
                 "    \"id\": 2,\n" +
                 "    \"name\": \"Ashu\",\n" +
@@ -121,7 +121,7 @@ public class ProductController {
     }
 
     @GetMapping("/user5")
-    public String getUser5(@PathVariable int id) {
+    public String getUser5() {
         return"{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"John Doe\",\n" +
@@ -133,7 +133,7 @@ public class ProductController {
     }
 
     @GetMapping("/user6")
-    public String getUser6(@PathVariable int id) {
+    public String getUser6() {
         return"{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"Ashutosh\",\n" +
@@ -145,7 +145,7 @@ public class ProductController {
     }
 
     @GetMapping("/user7")
-    public String getUser7(@PathVariable int id) {
+    public String getUser7() {
         return"{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"John Doe\",\n" +
@@ -163,7 +163,7 @@ public class ProductController {
     }
 
     @GetMapping("/user8")
-    public String getUser8(@PathVariable int id) {
+    public String getUser8() {
         return"{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"John De\",\n" +
