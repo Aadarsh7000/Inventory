@@ -23,6 +23,18 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+
+    @PostMapping("/OnPremProducts")
+    public ResponseEntity<List<Product>> getOnPremProducts(@Valid @RequestBody List<Product> products){
+        List<Product> createdProducts = productService.getOnPremProducts(products);
+        return ResponseEntity.status(HttpStatus.OK).body(createdProducts);
+    }
+    @PostMapping("/AWSProducts")
+    public ResponseEntity<List<Product>> getAWSProducts(@Valid @RequestBody List<Product> products) {
+        List<Product> createdProducts = productService.getAWSProducts(products);
+        return ResponseEntity.status(HttpStatus.OK).body(createdProducts);
+    }
+    
     @GetMapping("/getAllProduct")
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
